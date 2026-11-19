@@ -1,4 +1,4 @@
-# Coy Discover — Independent Prototype
+# Coy Discover 
 
 A privacy-first, mobile-first people discovery web application built as an independent prototype for the Coy SDE Intern assignment. Discover people through shared interests, college, and city. One-sided likes are **never** exposed; matches appear only when **both** users like each other.
 
