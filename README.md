@@ -1,8 +1,8 @@
 # Coy Discover
 
-A privacy-first, mobile-first people discovery application developed as an independent prototype for the **Coy SDE Intern Assignment**.
+A privacy-first, mobile-first people discovery application designed to help users connect through shared interests, college, and location.
 
-Coy Discover helps users discover people based on shared interests, college, and city. Its core principle is privacy: **one-sided likes are never revealed, and a match is created only when both users like each other.**
+Coy Discover focuses on meaningful connections and user privacy. Its core principle is simple: **one-sided likes are never revealed, and a match is created only when both users express mutual interest.**
 
 ## Features
 
@@ -34,7 +34,7 @@ The application follows a client-server architecture with a separate frontend, b
 ### Project Structure
 
 ```text
-Coy-Assignment/
+Coy-Discover/
 │
 ├── client/
 │   ├── app/
@@ -94,7 +94,7 @@ Ensure MongoDB is running locally on port `27017`.
 
 ```bash
 git clone <your-repository-url>
-cd Coy-Assignment
+cd Coy-Discover
 ```
 
 ### 2. Install Dependencies
@@ -138,7 +138,7 @@ cd server
 npm run seed
 ```
 
-The seed script creates the demo user and 35 mock profiles. It also creates incoming-like records for testing mutual matching.
+The seed script creates the demo user and 35 mock profiles. It also creates incoming-like records to demonstrate the mutual matching functionality.
 
 Copy the generated `DEMO_USER_ID` into `server/.env`.
 
@@ -268,7 +268,7 @@ Where:
 
 Profiles with higher similarity scores appear first. Ties are resolved using MongoDB ObjectId for deterministic ordering.
 
-This is a transparent, rule-based recommendation approach rather than an AI/ML model.
+This provides a transparent, rule-based recommendation approach rather than relying on an AI/ML model.
 
 ## Privacy and Security
 
@@ -321,11 +321,11 @@ The seed script generates:
 - 35 mock discovery profiles.
 - 7 incoming-like records to demonstrate mutual matching.
 
-**Reviewer Tip:** Like profiles that have already liked the demo user to experience the mutual match flow and match celebration modal.
+**Demo Tip:** Like profiles that have already liked the demo user to experience the mutual match flow and match celebration modal.
 
 ## Known Limitations
 
-The current implementation is an independent prototype with the following limitations:
+The current implementation is a functional prototype with the following limitations:
 
 1. **Demo Authentication:** No real authentication system is implemented. Requests operate using a server-configured demo user ID.
 2. **Mock Data:** Profiles and interactions use seeded mock data.
@@ -334,9 +334,10 @@ The current implementation is an independent prototype with the following limita
 5. **No Pagination:** The discovery feed currently returns all eligible profiles in one response.
 6. **Static Avatars:** Profile images use locally generated SVG placeholders; image uploads are not implemented.
 
-These limitations are intentional for the scope of the assignment and can be addressed in a production-ready implementation.
+These limitations can be addressed as the application evolves into a production-ready platform.
 
 ---
 
-**Coy Discover**  
-Built as an independent prototype for the Coy SDE Intern Assignment.
+**Coy Discover**
+
+*Built with a focus on privacy, meaningful connections, and thoughtful user experiences.*
